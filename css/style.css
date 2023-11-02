@@ -2,3 +2,25 @@
 font-family: 'Merienda', cursive;
 font-family: 'Poppins', sans-serif;
 */
+
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ##### */
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; /* Default = 16px. */
+    font-family: 'Poppins', sans-serif;
+}
