@@ -10,8 +10,8 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
     box-sizing: border-box;
     border: none;
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none; /* tag <a> */
+    list-style: none; /* tag <li> */
 }
 
 /* ##### */
