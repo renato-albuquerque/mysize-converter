@@ -23,4 +23,44 @@ font-family: 'Poppins', sans-serif;
 body {
     font-size: 1.6rem; /* Default = 16px. */
     font-family: 'Poppins', sans-serif;
+
+    /* Strategy to center all the elements on the page. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid blue;
+    width: 35.5rem; /* 375px - 20px */
+}
+
+.title {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.section-1 {
+    border: 1px solid blue;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.step-1 {
+    text-align: center;
+}
+
+.wrapCountriesSelect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
