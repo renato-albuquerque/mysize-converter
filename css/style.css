@@ -34,7 +34,7 @@ body {
 
 .container {
     border: 1px solid blue;
-    width: 35.5rem; /* 375px - 20px */
+    width: 35.5rem; /* 375px - 20px. Update to all screen sizes. */
 }
 
 .title {
