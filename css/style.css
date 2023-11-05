@@ -56,6 +56,7 @@ body {
 
 .step {
     text-align: center;
+    font-family: 'Merienda', cursive;
 }
 
 .wrapSelect {
@@ -66,5 +67,9 @@ body {
 }
 
 .result {
+    text-align: center;
+}
+
+.footer {
     text-align: center;
 }
