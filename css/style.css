@@ -54,13 +54,17 @@ body {
     flex-direction: column;
 }
 
-.step-1 {
+.step {
     text-align: center;
 }
 
-.wrapCountriesSelect {
+.wrapSelect {
     display: flex;
     align-items: center;
     justify-content: space-around;
     
+}
+
+.result {
+    text-align: center;
 }
