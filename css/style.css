@@ -40,7 +40,7 @@ body {
 }
 
 .header {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .title {
@@ -71,7 +71,11 @@ body {
 .step {
     text-align: center;
     font-family: 'Merienda', cursive;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
+    color: black;
+    text-shadow: 2px 2px 3px grey;
 }
 
 .wrapSelect {
@@ -80,9 +84,15 @@ body {
     justify-content: space-around;
 }
 
+.selectCountryOrigin, .selectCountryDestiny {
+    margin-bottom: 1rem;
+}
+
 .imageFlag1, .imageFlag2 {
     width: 8rem;
     height: 5rem;
+    display: block;
+    margin: 0 auto;
 }
 
 .section-4 {
@@ -98,12 +108,19 @@ body {
     border-radius: 1rem;
     color: white;
     background-color: black;
+    cursor: pointer;
     font-family: 'Merienda', cursive;
 }
 
 .result {
     text-align: center;
-    font-family: 'Merienda', cursive;
+    width: 30rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: beige;
+    padding: 1rem 0.5rem;
 }
 
 .footer {
