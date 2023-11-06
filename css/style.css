@@ -30,12 +30,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container {
     border: 1px solid blue;
     width: 35.5rem; /* 375px - 20px. Update to all screen sizes. */
+    margin: 2rem 0;
 }
 
 .header {
@@ -84,8 +85,25 @@ body {
     height: 5rem;
 }
 
+.section-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.button {
+    padding: 1.5rem;
+    width: 10rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+    font-family: 'Merienda', cursive;
+}
+
 .result {
     text-align: center;
+    font-family: 'Merienda', cursive;
 }
 
 .footer {
