@@ -10,6 +10,8 @@ const imageFlag2 = document.querySelector(".imageFlag2");
 /* const bra2 = document.querySelector(".bra2");
 const eua2 = document.querySelector(".eua2");
 const eur2 = document.querySelector(".eur2"); */
+const hideFlag1 = document.querySelector(".hideFlag1");
+const hideFlag2 = document.querySelector(".hideFlag2");
 const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
 
@@ -56,25 +58,31 @@ getSelectClothingType();
 /* functions for: add country flag below country choice */
 function countryOriginFlag() {
     if(valueCountry == "bra1") {
+        hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
     } else if(valueCountry == "eua1") {
+        hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
     } else if(valueCountry == "eur1") {
+        hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
     } else {
-        imageFlag1.src = ""
+        hideFlag1.classList.add("hide");
     }
 }
 
 function countryDestinyFlag() {
     if(valueCountry == "bra2") {
+        hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
     } else if(valueCountry == "eua2") {
+        hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
     } else if(valueCountry == "eur2") {
+        hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
     } else {
-        imageFlag2.src = ""
+        hideFlag2.classList.add("hide");
     }
 }
 

@@ -33,6 +33,10 @@ body {
     /* height: 100vh; */
 }
 
+.hide {
+    display: none;
+}
+
 .container {
     border: 1px solid blue;
     width: 35.5rem; /* 375px - 20px. Update to all screen sizes. */
