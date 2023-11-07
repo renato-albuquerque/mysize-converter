@@ -16,7 +16,7 @@ const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
 const messageCountryChoice = document.querySelector(".messageCountryChoice");
 
-let valueCountryOrigin, valueCountryDestiny
+let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
 // functions
 
@@ -46,16 +46,16 @@ getCountryDestiny();
 
 function getSelectCategory() {
     selectCategory.addEventListener("change", () => {
-        valueCountry = selectCategory.options[selectCategory.selectedIndex].value;
-        console.log(valueCountry);
+        valueCategory = selectCategory.options[selectCategory.selectedIndex].value;
+        console.log(valueCategory);
     })
 }
 getSelectCategory();
 
 function getSelectClothingType() {
     selectClothingType.addEventListener("change", () => {
-        valueCountry = selectClothingType.options[selectClothingType.selectedIndex].value;
-        console.log(valueCountry);
+        valueClothingType = selectClothingType.options[selectClothingType.selectedIndex].value;
+        console.log(valueClothingType);
     })
 }
 getSelectClothingType();
@@ -98,5 +98,14 @@ function alertCountryChoice() {
         messageCountryChoice.textContent = "" 
     }
 }
+
+function btnSearch() {
+    if(valueCountryOrigin == "bra" && valueCountryDestiny == "eua" && valueCategory == "male" && valueClothingType == "shirt") {
+        alert("Adicionar informações!!!")
+    } else {
+        alert("Escolha ainda não cadastrada!!!")
+    }
+}
+
 
 // events
