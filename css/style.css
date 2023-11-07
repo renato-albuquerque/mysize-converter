@@ -88,13 +88,19 @@ body {
     justify-content: space-around;
 }
 
+.wrapSelectFlag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .selectCountryOrigin, .selectCountryDestiny {
     margin-bottom: 1rem;
 }
 
 .imageFlag1, .imageFlag2 {
-    width: 8rem;
-    height: 5rem;
+    width: 4rem;
+    height: 2.5rem;
     display: block;
     margin: 0 auto;
 }
