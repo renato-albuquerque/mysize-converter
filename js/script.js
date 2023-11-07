@@ -14,27 +14,32 @@ const hideFlag1 = document.querySelector(".hideFlag1");
 const hideFlag2 = document.querySelector(".hideFlag2");
 const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
+const messageCountryChoice = document.querySelector(".messageCountryChoice");
+
+let valueCountryOrigin, valueCountryDestiny
 
 // functions
 
 function getCountryOrigin() {
     selectCountryOrigin.addEventListener("change", () => {
-        valueCountry = selectCountryOrigin.options[selectCountryOrigin.selectedIndex].value;
-        console.log(valueCountry);
+        valueCountryOrigin = selectCountryOrigin.options[selectCountryOrigin.selectedIndex].value;
+        console.log(valueCountryOrigin);
 
-        /* add country flag below country choice */
+        /* add country flag to the side country choice */
         countryOriginFlag()
+        alertCountryChoice()
     })
 }
 getCountryOrigin();
 
 function getCountryDestiny() {
     selectCountryDestiny.addEventListener("change", () => {
-        valueCountry = selectCountryDestiny.options[selectCountryDestiny.selectedIndex].value;
-        console.log(valueCountry);
+        valueCountryDestiny = selectCountryDestiny.options[selectCountryDestiny.selectedIndex].value;
+        console.log(valueCountryDestiny);
 
-        /* add country flag below country choice */
+        /* add country flag to the side country choice */
         countryDestinyFlag()
+        alertCountryChoice()
     })
 }
 getCountryDestiny();
@@ -57,13 +62,13 @@ getSelectClothingType();
 
 /* functions for: add country flag below country choice */
 function countryOriginFlag() {
-    if(valueCountry == "bra1") {
+    if(valueCountryOrigin == "bra") {
         hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
-    } else if(valueCountry == "eua1") {
+    } else if(valueCountryOrigin == "eua") {
         hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
-    } else if(valueCountry == "eur1") {
+    } else if(valueCountryOrigin == "eur") {
         hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
     } else {
@@ -72,13 +77,13 @@ function countryOriginFlag() {
 }
 
 function countryDestinyFlag() {
-    if(valueCountry == "bra2") {
+    if(valueCountryDestiny == "bra") {
         hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
-    } else if(valueCountry == "eua2") {
+    } else if(valueCountryDestiny == "eua") {
         hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
-    } else if(valueCountry == "eur2") {
+    } else if(valueCountryDestiny == "eur") {
         hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
     } else {
@@ -86,5 +91,12 @@ function countryDestinyFlag() {
     }
 }
 
+function alertCountryChoice() {
+    if(valueCountryOrigin == valueCountryDestiny) {
+        messageCountryChoice.textContent = "Atenção! Escolher países diferentes." 
+    } else {
+        messageCountryChoice.textContent = "" 
+    }
+}
 
 // events
