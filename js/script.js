@@ -16,6 +16,7 @@ const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
 const messageCountryChoice = document.querySelector(".messageCountryChoice");
 const result = document.querySelector(".result");
+const table = document.querySelector(".table");
 
 let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
@@ -102,7 +103,8 @@ function alertCountryChoice() {
 
 function btnSearch() {
     if(valueCountryOrigin == "bra" && valueCountryDestiny == "eua" && valueCategory == "male" && valueClothingType == "shirt") {
-        result.innerHTML = 
+        result.textContent = "";
+        table.classList.remove("hide");
     } else {
         result.textContent = "Deu errado!"
     }

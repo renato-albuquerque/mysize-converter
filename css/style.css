@@ -134,10 +134,10 @@ body {
     text-align: center;
     width: 30rem;
     min-height: 20rem;
-    margin: 0 auto;
-    border: 1px solid black;
+    /* margin: 0 auto; */
     border-radius: 0.5rem;
     background-color: beige;
+    box-shadow: 5px 5px 5px black;
     padding: 1rem 0.5rem;
     position: absolute;
 }
@@ -145,14 +145,16 @@ body {
 .table {
     position: relative;
     top: 7px;
-    left: 48px;
+    /* left: 48px; */
     text-align: center;
-    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 th, td {
     padding: 0.4rem;
     text-align: center;
+    border-bottom: 1px solid black;
+    width: 14rem;
 }
 
 .footer {
