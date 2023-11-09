@@ -145,7 +145,7 @@ body {
     
 }
 
-.table {
+.table_bra_usa_male_shirt, .table_bra_usa_male_pants, .table_bra_usa_male_shoe, .table_bra_usa_female_shirt, .table_bra_usa_female_pants, .table_bra_usa_female_shoe {
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -160,13 +160,16 @@ th, td {
     padding: 0.4rem;
     text-align: center;
     border-bottom: 1px solid black;
-    
     width: 14rem;
 }
 
 th {
     background-color: blue;
     color: white;
+}
+
+td sup {
+    font-size: 1.2rem;
 }
 
 tr:nth-child(even) {

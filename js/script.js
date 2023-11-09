@@ -2,21 +2,22 @@
 
 const selectCountryOrigin = document.querySelector(".selectCountryOrigin");
 const imageFlag1 = document.querySelector(".imageFlag1");
-/* const bra1 = document.querySelector(".bra1");
-const eua1 = document.querySelector(".eua1");
-const eur1 = document.querySelector(".eur1"); */
 const selectCountryDestiny = document.querySelector(".selectCountryDestiny");
 const imageFlag2 = document.querySelector(".imageFlag2");
-/* const bra2 = document.querySelector(".bra2");
-const eua2 = document.querySelector(".eua2");
-const eur2 = document.querySelector(".eur2"); */
 const hideFlag1 = document.querySelector(".hideFlag1");
 const hideFlag2 = document.querySelector(".hideFlag2");
 const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
 const messageCountryChoice = document.querySelector(".messageCountryChoice");
 const result = document.querySelector(".result");
-const table = document.querySelector(".table");
+
+const table = document.querySelector(".table")
+const table_bra_usa_male_shirt = document.querySelector(".table_bra_usa_male_shirt");
+const table_bra_usa_male_pants = document.querySelector(".table_bra_usa_male_pants");
+const table_bra_usa_male_shoe = document.querySelector(".table_bra_usa_male_shoe");
+const table_bra_usa_female_shirt = document.querySelector(".table_bra_usa_female_shirt");
+const table_bra_usa_female_pants = document.querySelector(".table_bra_usa_female_pants");
+const table_bra_usa_female_shoe = document.querySelector(".table_bra_usa_female_shoe");
 
 let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
@@ -62,12 +63,12 @@ function getSelectClothingType() {
 }
 getSelectClothingType();
 
-/* functions for: add country flag below country choice */
+/* functions for: add country flag on the side country choice */
 function countryOriginFlag() {
     if(valueCountryOrigin == "bra") {
         hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
-    } else if(valueCountryOrigin == "eua") {
+    } else if(valueCountryOrigin == "usa") {
         hideFlag1.classList.remove("hide");
         imageFlag1.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
     } else if(valueCountryOrigin == "eur") {
@@ -82,7 +83,7 @@ function countryDestinyFlag() {
     if(valueCountryDestiny == "bra") {
         hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/275px-Flag_of_Brazil.svg.png"
-    } else if(valueCountryDestiny == "eua") {
+    } else if(valueCountryDestiny == "usa") {
         hideFlag2.classList.remove("hide");
         imageFlag2.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/290px-Flag_of_the_United_States.svg.png"
     } else if(valueCountryDestiny == "eur") {
@@ -102,13 +103,37 @@ function alertCountryChoice() {
 }
 
 function btnSearch() {
-    if(valueCountryOrigin == "bra" && valueCountryDestiny == "eua" && valueCategory == "male" && valueClothingType == "shirt") {
+    /* choice: bra - usa - male */
+    if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "shirt") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "shirt")) {
         result.classList.add("hide");
-        table.classList.remove("hide");
-    } else {
-        result.textContent = "Deu errado!"
-    }
-}
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_male_shirt.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "pants") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "pants")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_male_pants.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "shoe") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "shoe")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_male_shoe.classList.remove("hide");
 
+    /* choice: bra - usa - female */    
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "female" && valueClothingType == "shirt") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "female" && valueClothingType == "shirt")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_female_shirt.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "female" && valueClothingType == "pants") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "female" && valueClothingType == "pants")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_female_pants.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "female" && valueClothingType == "shoe") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "female" && valueClothingType == "shoe")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_female_shoe.classList.remove("hide");
+    } else {
+    table.classList.add("hide");
+    result.textContent = "Deu errado!"
+}
+}
 
 // events
