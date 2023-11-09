@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: thistle;
+    background-color: wheat;
 }
 
 .hide {
@@ -86,22 +86,25 @@ body {
 .wrapSelect {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.8rem;
 }
 
 .wrapSelectFlag {
     display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 
-.selectCountryOrigin, .selectCountryDestiny {
-    margin-bottom: 1rem;
+.selectCountryOrigin, .selectCountryDestiny, .selectCategory, .selectClothingType {
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 12.25rem;
 }
 
 .imageFlag1, .imageFlag2 {
     width: 4rem;
-    height: 2.5rem;
+    height: 3rem;
     display: block;
     margin: 0 auto;
 }
@@ -164,6 +167,10 @@ th, td {
 th {
     background-color: blue;
     color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
 }
 
 .footer {
