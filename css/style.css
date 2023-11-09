@@ -139,6 +139,20 @@ body {
     border-radius: 0.5rem;
     background-color: beige;
     padding: 1rem 0.5rem;
+    position: absolute;
+}
+
+.table {
+    position: relative;
+    top: 7px;
+    left: 48px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 0.4rem;
+    text-align: center;
 }
 
 .footer {

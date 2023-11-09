@@ -15,6 +15,7 @@ const hideFlag2 = document.querySelector(".hideFlag2");
 const selectCategory = document.querySelector(".selectCategory");
 const selectClothingType = document.querySelector(".selectClothingType");
 const messageCountryChoice = document.querySelector(".messageCountryChoice");
+const result = document.querySelector(".result");
 
 let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
@@ -101,9 +102,9 @@ function alertCountryChoice() {
 
 function btnSearch() {
     if(valueCountryOrigin == "bra" && valueCountryDestiny == "eua" && valueCategory == "male" && valueClothingType == "shirt") {
-        alert("Adicionar informações!!!")
+        result.innerHTML = 
     } else {
-        alert("Escolha ainda não cadastrada!!!")
+        result.textContent = "Deu errado!"
     }
 }
 
