@@ -103,7 +103,7 @@ function alertCountryChoice() {
 
 function btnSearch() {
     if(valueCountryOrigin == "bra" && valueCountryDestiny == "eua" && valueCategory == "male" && valueClothingType == "shirt") {
-        result.textContent = "";
+        result.classList.add("hide");
         table.classList.remove("hide");
     } else {
         result.textContent = "Deu errado!"

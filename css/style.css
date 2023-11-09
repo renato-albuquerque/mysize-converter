@@ -133,28 +133,37 @@ body {
 .result {
     text-align: center;
     width: 30rem;
-    min-height: 20rem;
-    /* margin: 0 auto; */
+    height: 15rem;
+    margin: 0 auto;
     border-radius: 0.5rem;
     background-color: beige;
     box-shadow: 5px 5px 5px black;
     padding: 1rem 0.5rem;
-    position: absolute;
+    
 }
 
 .table {
-    position: relative;
-    top: 7px;
-    /* left: 48px; */
+    margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
+    width: 30rem;
+    /* border-radius: 0.5rem; */
+    background-color: beige;
+    box-shadow: 5px 5px 5px black;
+    padding: 1rem 0.5rem;
 }
 
 th, td {
     padding: 0.4rem;
     text-align: center;
     border-bottom: 1px solid black;
+    
     width: 14rem;
+}
+
+th {
+    background-color: blue;
+    color: white;
 }
 
 .footer {
