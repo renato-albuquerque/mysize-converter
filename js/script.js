@@ -18,6 +18,9 @@ const table_bra_usa_male_shoe = document.querySelector(".table_bra_usa_male_shoe
 const table_bra_usa_female_shirt = document.querySelector(".table_bra_usa_female_shirt");
 const table_bra_usa_female_pants = document.querySelector(".table_bra_usa_female_pants");
 const table_bra_usa_female_shoe = document.querySelector(".table_bra_usa_female_shoe");
+const table_bra_usa_children_shirt = document.querySelector(".table_bra_usa_children_shirt");
+const table_bra_usa_children_pants = document.querySelector(".table_bra_usa_children_pants");
+const table_bra_usa_children_shoe = document.querySelector(".table_bra_usa_children_shoe");
 
 let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
@@ -103,15 +106,19 @@ function alertCountryChoice() {
 }
 
 function btnSearch() {
+    /* ### bra - usa ### */
+    
     /* choice: bra - usa - male */
     if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "shirt") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "shirt")) {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
         table_bra_usa_male_shirt.classList.remove("hide");
+
     } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "pants") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "pants")) {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
         table_bra_usa_male_pants.classList.remove("hide");
+
     } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "male" && valueClothingType == "shoe") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "male" && valueClothingType == "shoe")) {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
@@ -122,17 +129,34 @@ function btnSearch() {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
         table_bra_usa_female_shirt.classList.remove("hide");
+
     } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "female" && valueClothingType == "pants") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "female" && valueClothingType == "pants")) {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
         table_bra_usa_female_pants.classList.remove("hide");
+
     } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "female" && valueClothingType == "shoe") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "female" && valueClothingType == "shoe")) {
         result.classList.add("hide");
         /* add for other tables: classlist.add.hide */
         table_bra_usa_female_shoe.classList.remove("hide");
+
+    /* choice: bra - usa - children */   
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "children" && valueClothingType == "shirt") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "children" && valueClothingType == "shirt")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_children_shirt.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "children" && valueClothingType == "pants") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "children" && valueClothingType == "pants")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_children_pants.classList.remove("hide");
+    } else if((valueCountryOrigin == "bra" && valueCountryDestiny == "usa" && valueCategory == "children" && valueClothingType == "shoe") || (valueCountryOrigin == "usa" && valueCountryDestiny == "bra" && valueCategory == "children" && valueClothingType == "shoe")) {
+        result.classList.add("hide");
+        /* add for other tables: classlist.add.hide */
+        table_bra_usa_children_shoe.classList.remove("hide");
+
     } else {
     table.classList.add("hide");
-    result.textContent = "Deu errado!"
+    result.textContent = "Atenção! Informação não encontrada."
 }
 }
 
