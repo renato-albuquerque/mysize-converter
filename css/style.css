@@ -24,6 +24,7 @@ font-family: 'Poppins', sans-serif;
 body {
     font-size: 1.6rem; /* Default = 16px. */
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(lightyellow, #FACB02);
 
     /* Strategy to center all the elements on the page. */
     display: flex;
@@ -31,7 +32,6 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: #FACB02;
 }
 
 .hide {
@@ -49,8 +49,10 @@ body {
 
 .title {
     text-align: center;
+    text-shadow: 2px 2px 3px black;
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 4rem;
+    color: #FACB02;
     margin-bottom: 2rem;
 }
 
@@ -99,6 +101,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     width: 12.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
 }
 
 .imageFlag1, .imageFlag2 {
@@ -106,6 +111,7 @@ body {
     height: 3rem;
     display: block;
     margin: 0 auto;
+    border-radius: 0.5rem;
 }
 
 .messageCountryChoice {
@@ -127,14 +133,15 @@ body {
     padding: 1.5rem;
     width: 10rem;
     border-radius: 1rem;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #FACB02;
     cursor: pointer;
     font-family: 'Merienda', cursive;
+    font-weight: bold;
 }
 
 .button:hover {
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgb(199, 163, 2);
     transition: all .5s;
 }
 
@@ -197,8 +204,7 @@ tr:nth-child(even) {
 
 .footer-a:hover {
     background-color: black;
-    color: #FACB02;
-    padding: 0 0.5rem;
+    color: yellow;
     transition: all .5s;
 }
 
