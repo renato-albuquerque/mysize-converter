@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: wheat;
+    background-color: #FACB02;
 }
 
 .hide {
@@ -39,8 +39,7 @@ body {
 }
 
 .container {
-    border: 1px solid blue;
-    width: 35.5rem; /* 375px - 20px. Update to all screen sizes. */
+    width: 37.5rem; /* Mobile M, 375px. */
     margin: 2rem 0;
 }
 
@@ -87,7 +86,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 2rem;
 }
 
 .wrapSelectFlag {
@@ -120,7 +119,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .button {
@@ -131,6 +131,11 @@ body {
     background-color: black;
     cursor: pointer;
     font-family: 'Merienda', cursive;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    transition: all .5s;
 }
 
 .result {
@@ -164,7 +169,7 @@ th, td {
 }
 
 th {
-    background-color: blue;
+    background-color: #71706D;
     color: white;
 }
 
@@ -186,4 +191,14 @@ tr:nth-child(even) {
 
 .footer-a {
     font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
 }
+
+.footer-a:hover {
+    background-color: black;
+    color: #FACB02;
+    padding: 0 0.5rem;
+    transition: all .5s;
+}
+
