@@ -111,9 +111,13 @@ function countryDestinyFlag() {
 
 function alertCountryChoice() {
     if(valueCountryOrigin == valueCountryDestiny) {
-        messageCountryChoice.textContent = "Atenção! Escolher países diferentes." 
+        messageCountryChoice.textContent = "Atenção! Escolher países diferentes.";
+    } else if((valueCountryOrigin == "usa" && valueCountryDestiny == "eur") || (valueCountryOrigin == "eur" && valueCountryDestiny == "usa")) {
+        messageCountryChoice.textContent = "Atenção! Informações não disponíveis."; 
+    } else if((valueCountryOrigin == "choice1" && valueCountryDestiny == "choice2") || (valueCountryOrigin == "bra" && valueCountryDestiny == "choice2") || (valueCountryOrigin == "choice1" && valueCountryDestiny == "bra") || (valueCountryOrigin == "choice1" && valueCountryDestiny == "usa") || (valueCountryOrigin == "usa" && valueCountryDestiny == "choice2") || (valueCountryOrigin == "choice1" && valueCountryDestiny == "eur") || (valueCountryOrigin == "eur" && valueCountryDestiny == "choice2")) {
+        messageCountryChoice.textContent = "Atenção! Preencher os dois campos."; 
     } else {
-        messageCountryChoice.textContent = "" 
+        messageCountryChoice.textContent = ""; 
     }
 }
 
@@ -220,11 +224,11 @@ function btnSearch() {
         table.classList.add("hide");
         result.style.color = "red";
         result.style.textAlign = "justify";
-        result.style.paddingLeft = "2rem";
-        result.style.paddingRight = "2rem";
+        result.style.padding = "2rem";
         result.textContent = "Atenção!"
-        result.textContent += " 1. Certifique-se de inserir países diferentes."
-        result.textContent += " 2. Resultados não disponíveis para pesquisas entre Estados Unidos e União Européia."
+        result.textContent += " (1) Preencher todos os campos.";
+        result.textContent += " (2) Certifique-se de escolher países diferentes.";
+        result.textContent += " (3) Resultados não disponíveis para pesquisa entre Estados Unidos e União Européia.";
 }
 
 // reset functions, to use in btnSearch() function
