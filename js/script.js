@@ -251,6 +251,8 @@ function btnSearch() {
 
     } else {
         table.classList.add("hide");
+        table_standard.classList.add("hide");
+        result.classList.remove("hide");
         result.style.color = "red";
         result.style.textAlign = "justify";
         result.style.padding = "2rem";
