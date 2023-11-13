@@ -304,6 +304,8 @@ function reset_bra_usa_male_shirt() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_male_pants() {
@@ -324,6 +326,8 @@ function reset_bra_usa_male_pants() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_male_shoe() {
@@ -344,6 +348,8 @@ function reset_bra_usa_male_shoe() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 /* bra-usa-female */
@@ -365,6 +371,8 @@ function reset_bra_usa_female_shirt() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_female_pants() {
@@ -385,6 +393,8 @@ function reset_bra_usa_female_pants() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_female_shoe() {
@@ -405,6 +415,8 @@ function reset_bra_usa_female_shoe() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 /* bra-usa-children */
@@ -427,6 +439,8 @@ function reset_bra_usa_children_shirt() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_children_pants() {
@@ -447,6 +461,8 @@ function reset_bra_usa_children_pants() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_usa_children_shoe() {
@@ -467,6 +483,8 @@ function reset_bra_usa_children_shoe() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 /* bra-eur-male */
@@ -488,6 +506,8 @@ function reset_bra_eur_male_shirt() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_male_pants() {
@@ -508,6 +528,8 @@ function reset_bra_eur_male_pants() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_male_shoe() {
@@ -528,6 +550,8 @@ function reset_bra_eur_male_shoe() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 /* bra-eur-female */
@@ -549,6 +573,8 @@ function reset_bra_eur_female_shirt() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_female_pants() {
@@ -569,6 +595,8 @@ function reset_bra_eur_female_pants() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_female_shoe() {
@@ -589,6 +617,8 @@ function reset_bra_eur_female_shoe() {
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 /* bra-eur-children */
@@ -610,6 +640,8 @@ function reset_bra_eur_children_shirt() {
     table_bra_eur_female_shoe.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_children_pants() {
@@ -630,6 +662,8 @@ function reset_bra_eur_children_pants() {
     table_bra_eur_female_shoe.classList.add("hide")
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 
 function reset_bra_eur_children_shoe() {
@@ -650,6 +684,8 @@ function reset_bra_eur_children_shoe() {
     table_bra_eur_female_shoe.classList.add("hide")
     table_bra_eur_children_shirt.classList.add("hide")
     table_bra_eur_children_pants.classList.add("hide")
+
+    table_standard.classList.add("hide");
 }
 }
 
