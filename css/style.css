@@ -220,4 +220,8 @@ tr:nth-child(even) {
     font-family: 'Merienda', cursive;
     font-weight: bold;
 }
+.button-info:hover {
+    background-color: rgba(214, 57, 0, 0.788);
+    transition: all .3s;
+}
 

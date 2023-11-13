@@ -5,13 +5,20 @@
 @media(min-width: 1024px) {
     .container {
         width: 102.4rem;
-        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
     }
 
     .wrapSections123 {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .section-1, .section-2, .section-3 {
+        margin-bottom: 0;
     }
 
     .wrapSelectStep2, .wrapSelectStep3 {
@@ -22,7 +29,15 @@
     .section-4 {
         justify-content: center;
         gap: 5rem;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
+        margin-bottom: 6rem;
+        margin-top: 8rem;
+    }
+
+    .result {
+        width: 40rem;
+    }
+
+    .table_bra_usa_male_shirt, .table_bra_usa_male_pants, .table_bra_usa_male_shoe, .table_bra_usa_female_shirt, .table_bra_usa_female_pants, .table_bra_usa_female_shoe, .table_bra_usa_children_shirt, .table_bra_usa_children_pants, .table_bra_usa_children_shoe, .table_bra_eur_male_shirt, .table_bra_eur_male_pants, .table_bra_eur_male_shoe, .table_bra_eur_female_shirt, .table_bra_eur_female_pants, .table_bra_eur_female_shoe, .table_bra_eur_children_shirt, .table_bra_eur_children_pants, .table_bra_eur_children_shoe, .table_standard {
+        width: 40rem;  
     }
 }
