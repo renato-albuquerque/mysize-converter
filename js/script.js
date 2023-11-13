@@ -127,6 +127,7 @@ function showStandardInfo() {
     result.classList.add("hide");
     
     /* reset_standard_info(); */
+    /* check after why function reset_standard_info() isn't run.  */
     table_bra_usa_male_shirt.classList.add("hide")
     table_bra_usa_male_pants.classList.add("hide")
     table_bra_usa_male_shoe.classList.add("hide")

@@ -132,6 +132,7 @@ body {
 .button {
     padding: 1.5rem;
     width: 10rem;
+    height: 7rem;
     border-radius: 1rem;
     color: black;
     background-color: #FACB02;
@@ -208,17 +209,15 @@ tr:nth-child(even) {
     transition: all .5s;
 }
 
-.standard {
-    position: fixed;
-    top: 143.5px;
-    left: 1rem;
-    text-align: center;
+.button-info {
+    padding: 1.5rem;
+    width: 10rem;
+    height: 7rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(175, 47, 0);
     cursor: pointer;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
 }
-
-.fa-circle-info {
-    font-size: 3.5rem;
-    color: #71706D;
-}
-
 
