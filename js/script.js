@@ -11,7 +11,7 @@ const selectClothingType = document.querySelector(".selectClothingType");
 const messageCountryChoice = document.querySelector(".messageCountryChoice");
 const result = document.querySelector(".result");
 
-const table = document.querySelector(".table")
+const table = document.querySelector(".table");
 
 const table_bra_usa_male_shirt = document.querySelector(".table_bra_usa_male_shirt");
 const table_bra_usa_male_pants = document.querySelector(".table_bra_usa_male_pants");
@@ -32,6 +32,8 @@ const table_bra_eur_female_shoe = document.querySelector(".table_bra_eur_female_
 const table_bra_eur_children_shirt = document.querySelector(".table_bra_eur_children_shirt");
 const table_bra_eur_children_pants = document.querySelector(".table_bra_eur_children_pants");
 const table_bra_eur_children_shoe = document.querySelector(".table_bra_eur_children_shoe");
+
+const table_standard = document.querySelector(".table_standard");
 
 let valueCountryOrigin, valueCountryDestiny, valueCategory, valueClothingType
 
@@ -119,6 +121,32 @@ function alertCountryChoice() {
     } else {
         messageCountryChoice.textContent = ""; 
     }
+}
+
+function showStandardInfo() {
+    result.classList.add("hide");
+    
+    /* reset_standard_info(); */
+    table_bra_usa_male_shirt.classList.add("hide")
+    table_bra_usa_male_pants.classList.add("hide")
+    table_bra_usa_male_shoe.classList.add("hide")
+    table_bra_usa_female_shirt.classList.add("hide")
+    table_bra_usa_female_pants.classList.add("hide")
+    table_bra_usa_female_shoe.classList.add("hide")
+    table_bra_usa_children_shirt.classList.add("hide")
+    table_bra_usa_children_pants.classList.add("hide")
+    table_bra_usa_children_shoe.classList.add("hide")
+    table_bra_eur_male_shirt.classList.add("hide")
+    table_bra_eur_male_pants.classList.add("hide")
+    table_bra_eur_male_shoe.classList.add("hide")
+    table_bra_eur_female_shirt.classList.add("hide")
+    table_bra_eur_female_pants.classList.add("hide")
+    table_bra_eur_female_shoe.classList.add("hide")
+    table_bra_eur_children_shirt.classList.add("hide")
+    table_bra_eur_children_pants.classList.add("hide")
+    table_bra_eur_children_shoe.classList.add("hide")
+
+    table_standard.classList.remove("hide");
 }
 
 function btnSearch() {
@@ -230,6 +258,29 @@ function btnSearch() {
         result.textContent += " (2) Certifique-se de escolher países diferentes.";
         result.textContent += " (3) Resultados não disponíveis para pesquisa entre Estados Unidos e União Européia.";
 }
+
+// reset function to use in standard info
+
+/* function reset_standard_info() {
+    table_bra_usa_male_shirt.classList.add("hide")
+    table_bra_usa_male_pants.classList.add("hide")
+    table_bra_usa_male_shoe.classList.add("hide")
+    table_bra_usa_female_shirt.classList.add("hide")
+    table_bra_usa_female_pants.classList.add("hide")
+    table_bra_usa_female_shoe.classList.add("hide")
+    table_bra_usa_children_shirt.classList.add("hide")
+    table_bra_usa_children_pants.classList.add("hide")
+    table_bra_usa_children_shoe.classList.add("hide")
+    table_bra_eur_male_shirt.classList.add("hide")
+    table_bra_eur_male_pants.classList.add("hide")
+    table_bra_eur_male_shoe.classList.add("hide")
+    table_bra_eur_female_shirt.classList.add("hide")
+    table_bra_eur_female_pants.classList.add("hide")
+    table_bra_eur_female_shoe.classList.add("hide")
+    table_bra_eur_children_shirt.classList.add("hide")
+    table_bra_eur_children_pants.classList.add("hide")
+    table_bra_eur_children_shoe.classList.add("hide")
+} */
 
 // reset functions, to use in btnSearch() function
 

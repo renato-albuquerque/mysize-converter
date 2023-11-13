@@ -208,3 +208,16 @@ tr:nth-child(even) {
     transition: all .5s;
 }
 
+.standard {
+    position: fixed;
+    top: 143.5px;
+    left: 1rem;
+    text-align: center;
+}
+
+.fa-circle-info {
+    font-size: 3.5rem;
+    color: #71706D;
+}
+
+
