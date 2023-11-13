@@ -84,7 +84,7 @@ body {
     text-shadow: 2px 2px 3px grey;
 }
 
-.wrapSelect {
+.wrapSelectStep1, .wrapSelectStep2, .wrapSelectStep3 {
     display: flex;
     align-items: center;
     justify-content: center;

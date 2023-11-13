@@ -11,6 +11,7 @@
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> <!-- update favicon -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,69 +34,67 @@
         </header>
 
         <main class="main">
-            <section class="section-1">
-                <p class="step">Passo 1:</p>
+            <div class="wrapSections123"> <!-- created to use in media queries, 1024px and more. -->
+                <section class="section-1">
+                    <p class="step">Passo 1:</p>
                 
-                <div class="wrapSelect">
-                    <div>
-                        <p>País de origem?</p>
-                        <div class="wrapSelectFlag">
-                            <select class="selectCountryOrigin">
-                                <option value="choice1">Escolher</option>
-                                <option class="bra1" value="bra">Brasil</option>
-                                <option class="usa1" value="usa">Estados Unidos</option>
-                                <option class="eur1" value="eur">União Européia</option>
-                            </select>
-                            <div class="hide hideFlag1">
-                                <img class="imageFlag1"></img>
+                    <div class="wrapSelectStep1">
+                        <div>
+                            <p>País de origem?</p>
+                            <div class="wrapSelectFlag">
+                                <select class="selectCountryOrigin">
+                                    <option value="choice1">Escolher</option>
+                                    <option class="bra1" value="bra">Brasil</option>
+                                    <option class="usa1" value="usa">Estados Unidos</option>
+                                    <option class="eur1" value="eur">União Européia</option>
+                                </select>
+                                <div class="hide hideFlag1">
+                                    <img class="imageFlag1"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>País de destino?</p>
+                            <div class="wrapSelectFlag">
+                                <select class="selectCountryDestiny">
+                                    <option value="choice2">Escolher</option>
+                                    <option class="bra2" value="bra">Brasil</option>
+                                    <option class="usa2" value="usa">Estados Unidos</option>
+                                    <option class="eur2" value="eur">União Européia</option>
+                                </select>
+                                <div class="hide hideFlag2">
+                                    <img class="imageFlag2"></img>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>País de destino?</p>
-                        <div class="wrapSelectFlag">
-                            <select class="selectCountryDestiny">
-                                <option value="choice2">Escolher</option>
-                                <option class="bra2" value="bra">Brasil</option>
-                                <option class="usa2" value="usa">Estados Unidos</option>
-                                <option class="eur2" value="eur">União Européia</option>
-                            </select>
-                            <div class="hide hideFlag2">
-                                <img class="imageFlag2"></img>
-                            </div>
-                        </div>
+                    <span class="messageCountryChoice"></span>
+                </section>
+                <section class="section-2">
+                    <p class="step">Passo 2:</p>
+                    <div class="wrapSelectStep2">
+                        <p>Categoria?</p>
+                        <select class="selectCategory">
+                            <option value="category">Escolher</option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="children">Infantil</option>
+                        </select>
                     </div>
-                </div>
-                <span class="messageCountryChoice"></span>
-            </section>
-
-            <section class="section-2">
-                <p class="step">Passo 2:</p>
-
-                <div class="wrapSelect">
-                    <p>Categoria?</p>
-                    <select class="selectCategory">
-                        <option value="category">Escolher</option>
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                        <option value="children">Infantil</option>
-                    </select>
-                </div>
-            </section>
-
-            <section class="section-3">
-                <p class="step">Passo 3:</p>
-
-                <div class="wrapSelect">
-                    <p>Tipo de roupa?</p>
-                    <select class="selectClothingType">
-                        <option value="type">Escolher</option>
-                        <option value="shirt">Camisa</option>
-                        <option value="pants">Calça</option>
-                        <option value="shoe">Calçado</option>
-                    </select>
-                </div>
-            </section>
+                </section>
+                <section class="section-3">
+                    <p class="step">Passo 3:</p>
+                    <div class="wrapSelectStep3">
+                        <p>Tipo de roupa?</p>
+                        <select class="selectClothingType">
+                            <option value="type">Escolher</option>
+                            <option value="shirt">Camisa</option>
+                            <option value="pants">Calça</option>
+                            <option value="shoe">Calçado</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
             
             <section class="section-4">
                 <button class="button" onclick="btnSearch()">Pesquisar</button>
