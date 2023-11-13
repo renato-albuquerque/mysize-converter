@@ -213,6 +213,7 @@ tr:nth-child(even) {
     top: 143.5px;
     left: 1rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .fa-circle-info {
