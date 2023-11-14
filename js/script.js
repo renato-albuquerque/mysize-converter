@@ -250,8 +250,9 @@ function btnSearch() {
         table_bra_eur_children_shoe.classList.remove("hide");
 
     } else {
-        table.classList.add("hide");
-        table_standard.classList.add("hide");
+        /* table.classList.add("hide");
+        table_standard.classList.add("hide"); */
+        resetAll();
         result.classList.remove("hide");
         result.style.color = "red";
         result.style.textAlign = "justify";
@@ -689,6 +690,30 @@ function reset_bra_eur_children_shoe() {
 
     table_standard.classList.add("hide");
 }
+}
+
+function resetAll() {
+    table_bra_usa_male_shirt.classList.add("hide")
+    table_bra_usa_male_pants.classList.add("hide")
+    table_bra_usa_male_shoe.classList.add("hide")
+    table_bra_usa_female_shirt.classList.add("hide")
+    table_bra_usa_female_pants.classList.add("hide")
+    table_bra_usa_female_shoe.classList.add("hide")
+    table_bra_usa_children_shirt.classList.add("hide")
+    table_bra_usa_children_pants.classList.add("hide")
+    table_bra_usa_children_shoe.classList.add("hide")
+    table_bra_eur_male_shirt.classList.add("hide")
+    table_bra_eur_male_pants.classList.add("hide")
+    table_bra_eur_male_shoe.classList.add("hide")
+    table_bra_eur_female_shirt.classList.add("hide")
+    table_bra_eur_female_pants.classList.add("hide")
+    table_bra_eur_female_shoe.classList.add("hide")
+    table_bra_eur_children_shirt.classList.add("hide")
+    table_bra_eur_children_pants.classList.add("hide")
+    table_bra_eur_children_shoe.classList.add("hide")
+
+    table.classList.add("hide");
+    table_standard.classList.add("hide");
 }
 
 // events
